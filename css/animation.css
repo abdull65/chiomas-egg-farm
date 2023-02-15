@@ -1,0 +1,118 @@
+.gallery_box img:hover {
+  transform: scale(1.1);
+}
+
+.nav_link:link:hover,
+.nav_link:visited:hover,
+.nav_link:visited:active {
+  color: #e67e22;
+  border-bottom: 1px solid #e67e22;
+}
+
+.nav_btn:link:hover,
+.nav_btn:visited:hover {
+  background-color: #cf711f;
+  color: #fff;
+}
+
+.drop_down_button:hover {}
+
+.drop_down_button:hover .button i {
+  display: block;
+  font-size: 4rem;
+}
+
+.drop_down_button .button:hover .drop_down_icon {
+  display: none;
+}
+
+.drop_down_button .button:hover .drop_down_content {
+  display: block;
+  background-color: rgba(230, 126, 34, 0.9);
+  transform: rotateY(360deg);
+  color: #f5f5f5;
+  position: absolute;
+  margin-top: 3.4rem;
+  margin-right: 22rem;
+  padding-bottom: 1rem;
+  width: 25rem;
+}
+
+.drop_down_content .nav_list .nav_link:hover {
+  background-color: rgba(230, 126, 34, 0.9);
+  border-bottom: 1px solid #fff;
+  color: #f5f5f5;
+}
+
+.drop_down_content .nav_list .nav_link:active,
+.drop_down_content .nav_list .nav_link:visited {
+  transform: translateY(-3px);
+}
+
+
+
+.main_index_btn:link:hover,
+.main_index_btn:visited:hover,
+.price_btn:link:hover,
+.price_btn:visited:hover {
+  background-color: #cf711f;
+}
+
+.outline_index_btn:link:hover,
+.outline_index_btn:visited:hover {
+  transition: ease-in 1s;
+  /* background-color: #fdf2e9; */
+  box-shadow: inset 200px 0px 0px 0px #f08c35;
+}
+
+.view_more_btn:link:hover,
+.view_more_btn:visited:hover {
+  border: none;
+  padding: 1rem 1.2rem;
+  box-shadow: inset 0 0 0 3px #fdf2e9;
+}
+
+form button:hover {
+  background-color: #cf711f;
+}
+
+.footer_text .link:link:hover,
+.footer_text .link:visited:hover {
+  color: #e67e22;
+}
+
+.footer_nav .link:link:hover,
+.footer_nav .link:visited:hover {
+  color: #e67e22;
+  transform: scale(2);
+}
+
+.back_to_top_btn:hover {
+  transform: translateY(-3px);
+}
+
+.back_to_top_btn:hover p {
+  display: inline-block;
+}
+
+@keyframes rotate {
+  0% {
+    opacity: 0;
+    transform: translateY(0deg);
+  }
+
+  50% {
+    opacity: 0;
+    transform: translateY(90deg);
+  }
+
+  80% {
+    opacity: 0;
+    transform: translateY(180deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(360deg);
+  }
+}
