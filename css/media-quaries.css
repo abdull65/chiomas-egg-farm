@@ -37,9 +37,18 @@
   }
 
   .drop_down_content {
-    display: none;
+    display: block;
+    background-color: rgba(230, 126, 34, 0.9);
+    transform: rotateY(360deg);
+    color: #f5f5f5;
+    margin-top: 3.4rem;
+    margin-right: -50rem;
+    padding-bottom: 1rem;
+    width: 25rem;
+    line-height: 1.8;
+    position: absolute;
     transition: all 500ms ease-in-out;
-    animation: rotate 300ms linear;
+
   }
 
   .drop_down_content .nav_list .nav_link {
@@ -120,8 +129,6 @@
   #brands_section {
     padding: 4rem 0;
   }
-
-  .brand_content {}
 
   .brand_section_heading {
     font-size: 1.2rem;
@@ -206,8 +213,6 @@
     width: 100%;
     position: relative;
   }
-
-  .how_it_tWorks_img {}
 
   .how_it_tWorks_img::before {
     content: "";

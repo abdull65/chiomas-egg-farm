@@ -15,8 +15,6 @@
   color: #fff;
 }
 
-.drop_down_button:hover {}
-
 .drop_down_button:hover .button i {
   display: block;
   font-size: 4rem;
@@ -27,19 +25,12 @@
 }
 
 .drop_down_button .button:hover .drop_down_content {
-  display: block;
-  background-color: rgba(230, 126, 34, 0.9);
-  transform: rotateY(360deg);
-  color: #f5f5f5;
-  position: absolute;
-  margin-top: 3.4rem;
-  margin-right: 22rem;
-  padding-bottom: 1rem;
-  width: 25rem;
+  margin-right: 19rem;
 }
 
 .drop_down_content .nav_list .nav_link:hover {
-  background-color: rgba(230, 126, 34, 0.9);
+  /* background-color: rgba(230, 126, 34, 0.9); */
+  box-shadow: inset 300px 0px 0px 0px #f08c35;
   border-bottom: 1px solid #fff;
   color: #f5f5f5;
 }
