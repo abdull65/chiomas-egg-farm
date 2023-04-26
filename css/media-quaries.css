@@ -23,6 +23,10 @@
     position: relative;
   }
 
+  .logo a img {
+    height: 1.6rem !important;
+  }
+
   .navbar ul {
     display: flex;
     flex-direction: column;
@@ -138,6 +142,7 @@
 
   .index_text_card>h1 {
     font-size: 2.4rem;
+    padding-right: 2rem;
     text-align: left;
   }
 
@@ -564,7 +569,7 @@
     font-size: 1.4rem;
   }
 
-  .social_link ul {
+  .social_links ul {
     gap: 1rem;
   }
 
