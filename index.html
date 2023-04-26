@@ -9,10 +9,12 @@
   crossorigin="anonymous" referrerpolicy="no-referrer" />  
   <!-- phosphor icon
   <link rel="stylesheet" href="phosphoricons.com?weight=light&size=24&color=000000"> -->
+  <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./css/style.css">
   <link rel="stylesheet" type="text/css" href="./css/animation.css">
   <link rel="stylesheet" type="text/css" href="./css/media-quaries.css">
+  <link rel="shortcut icon" href="./imgs/favicon-small.png" type="image/x-icon">
   <title>Omnifood</title>
 </head>
 <body>
@@ -63,49 +65,12 @@
             </li>
           </ul>
         </nav>
-        <div class="drop_down_button">
-          <div class="button">
-            <i class="fa fa-close"></i>
-            <div class="drop_down_icon"></div>
-            <div class="drop_down_icon"></div>
-            <div class="drop_down_icon"></div>
-          <ul class="drop_down_content">
-            <li class="nav_list">
-              <a href="#about_section" class="nav_link">
-                About
-              </a>
-            </li>
-            <li class="nav_list">
-              <a href="#how_it_works_section" class="nav_link">
-                How it works
-              </a>
-            </li>
-            <li class="nav_list">
-              <a href="#meals_section" class="nav_link">
-                Meals
-              </a>
-            </li>
-            <li class="nav_list">
-              <a href="#testimonials_section" class="nav_link">
-                Testimonials
-              </a>
-            </li>
-            <li class="nav_list">
-              <a href="#pricing_section" class="nav_link">
-                Pricing
-              </a>
-            </li>
-            <li class="nav_list">
-              <a href="#footer_section" class="nav_link">
-                Contact Us
-              </a>
-            </li>
-            <li class="nav_list">
-              <a href="#call_to_action_section" class="nav_btn">
-                Try for free
-              </a>
-            </li>
-          </ul>
+        <div class="mobile_nav">
+          <div class="open_nav_box">
+            <ion-icon name="menu-outline" class="mobile_nav_btn"></ion-icon>
+          </div>
+          <div class="close_nav_box">
+            <ion-icon name="close-outline" class="mobile_nav_btn"></ion-icon>
           </div>
         </div>
       </header>
@@ -255,9 +220,9 @@
              </div>
              <p class="meal_title">Japanese Gyozas</p>
               <ul class="meal_attribute">
-            <li><span class="attribute_icon icon"><i class="fa fa-fire" aria-hidden="true"></i></span><span class="attribute_text">650 calories</span></li>
-            <li><span class="attribute_icon icon"><i class="fa fa-cutlery" aria-hidden="true"></i></span><span class="attribute_text">NutriScore &reg; 74</span></li>
-            <li><span class="attribute_icon icon"><i class="fa fa-star" aria-hidden="true"></i></span><span class="attribute_text">4.9 Rating (537)</span></li>
+            <li><span class="attribute_icon icon"><ion-icon name="flame-outline" class="fa"></ion-icon></span><span class="attribute_text">650 calories</span></li>
+            <li><span class="attribute_icon icon"><ion-icon name="restaurant-outline" class="fa"></ion-icon></span><span class="attribute_text">NutriScore &reg; 74</span></li>
+            <li><span class="attribute_icon icon"><ion-icon name="star-outline" class="fa"></ion-icon></i></span><span class="attribute_text">4.9 Rating (537)</span></li>
             <!-- <li>Number reviews: 537</li> -->
                </ul>
             </div>
@@ -271,9 +236,9 @@
               <span class="paleo tag">Paleo</span></div>
               <p class="meal_title">Avocado Salad</p>
               <ul class="meal_attribute">
-            <li><span class="attribute_icon icon"><i class="fa fa-fire" aria-hidden="true"></i></span><span class="attribute_text">400 calories</span></span></li>
-            <li><span class="attribute_icon icon"><i class="fa fa-cutlery" aria-hidden="true"></i></span><span class="attribute_text">NutriScore &reg; 92</span></span></li>
-            <li><span class="attribute_icon icon"><i class="fa fa-star" aria-hidden="true"></i></span><span class="attribute_text">4.8 Rating (441)</span></span></li>
+            <li><span class="attribute_icon icon"><ion-icon name="flame-outline" class="fa"></ion-icon></span><span class="attribute_text">400 calories</span></span></li>
+            <li><span class="attribute_icon icon"><ion-icon name="restaurant-outline" class="fa"></ion-icon></span><span class="attribute_text">NutriScore &reg; 92</span></span></li>
+            <li><span class="attribute_icon icon"><ion-icon name="star-outline" class="fa"></ion-icon></i></span><span class="attribute_text">4.8 Rating (441)</span></span></li>
             <!-- <li>Number reviews: 441</li> -->
               </ul>
             </div>
@@ -281,15 +246,15 @@
           <div class="meals_category">
         <h3>works with any diet:</h3>
         <ul>
-            <li><span class="caegory_icon icon"><i class="fa fa-check" aria-hidden="true"></span></i><span class="category_text">Vegetarian</span></li>
-            <li><span class="caegory_icon icon"><i class="fa fa-check" aria-hidden="true"></span></i><span class="category_text">Vegan</span></li>
-            <li><span class="caegory_icon icon"><i class="fa fa-check" aria-hidden="true"></span></i><span class="category_text">Pescatarian</span></li>
-            <li><span class="caegory_icon icon"><i class="fa fa-check" aria-hidden="true"></span></i><span class="category_text">Gluten-free</span></li>
-            <li><span class="caegory_icon icon"><i class="fa fa-check" aria-hidden="true"></span></i><span class="category_text">Lactose-free</span></li>
-            <li><span class="caegory_icon icon"><i class="fa fa-check" aria-hidden="true"></span></i><span class="category_text">Keto</span></li>
-            <li><span class="caegory_icon icon"><i class="fa fa-check" aria-hidden="true"></span></i><span class="category_text">Paleo</span></li>
-            <li><span class="caegory_icon icon"><i class="fa fa-check" aria-hidden="true"></span></i><span class="category_text">Low FODMAP</span></li>
-            <li><span class="caegory_icon icon"><i class="fa fa-check" aria-hidden="true"></span></i><span class="category_text">Kid-friendly</span></li>
+            <li><span class="caegory_icon icon"><ion-icon name="checkmark-outline" class="fa"></ion-icon></span></i><span class="category_text">Vegetarian</span></li>
+            <li><span class="caegory_icon icon"><ion-icon name="checkmark-outline" class="fa"></ion-icon></span></i><span class="category_text">Vegan</span></li>
+            <li><span class="caegory_icon icon"><ion-icon name="checkmark-outline" class="fa"></ion-icon></span></i><span class="category_text">Pescatarian</span></li>
+            <li><span class="caegory_icon icon"><ion-icon name="checkmark-outline" class="fa"></ion-icon></span></i><span class="category_text">Gluten-free</span></li>
+            <li><span class="caegory_icon icon"><ion-icon name="checkmark-outline" class="fa"></ion-icon></span></i><span class="category_text">Lactose-free</span></li>
+            <li><span class="caegory_icon icon"><ion-icon name="checkmark-outline" class="fa"></ion-icon></span></i><span class="category_text">Keto</span></li>
+            <li><span class="caegory_icon icon"><ion-icon name="checkmark-outline" class="fa"></ion-icon></span></i><span class="category_text">Paleo</span></li>
+            <li><span class="caegory_icon icon"><ion-icon name="checkmark-outline" class="fa"></ion-icon></span></i><span class="category_text">Low FODMAP</span></li>
+            <li><span class="caegory_icon icon"><ion-icon name="checkmark-outline" class="fa"></ion-icon></span></i><span class="category_text">Kid-friendly</span></li>
             </ul>
           </div>
         </div>
@@ -471,7 +436,7 @@
             <div class="pricing_feature_content">
             <div class="feature_card">
               <div class="feature_icon">
-                <i class="fa fa-ntrition"></i>
+                <ion-icon name="infinite-outline" class="fab"></ion-icon>
               </div>
               <div class="feature_sub_heading">
                 <h3>
@@ -486,7 +451,7 @@
             </div>
             <div class="feature_card">
               <div class="feature_icon">
-              <i class="fab fa-apple"></i>
+                <ion-icon name="nutrition-outline" class="fab"></ion-icon>
               </div>
               <div class="feature_sub_heading">
                 <h3>
@@ -501,7 +466,7 @@
             </div>
             <div class="feature_card">
               <div class="feature_icon">
-              <i class="fa fa-leaf"></i>
+                <ion-icon name="leaf-outline" class="fab"></ion-icon>
               </div>
               <div class="feature_sub_heading">
                 <h3>
@@ -516,7 +481,7 @@
             </div>
             <div class="feature_card">
               <div class="feature_icon">
-              <i class="fa fa-pause"></i>
+                <ion-icon name="pause-outline" class="fab"></ion-icon>
               </div>
               <div class="feature_sub_heading">
                 <h3>
@@ -742,10 +707,7 @@
         </footer>
       </div>
       <div class="back_to_top_box">
-      <a href="#" class="back_to_top_btn"><i class="fa fa-angle-up"></i>
-        <p>
-          back to top &UpArrow;
-        </p>
+      <a href="#" class="back_to_top_btn"><ion-icon name="chevron-up-outline" class="fa"></ion-icon>
       </a>
       </div>
     </div>

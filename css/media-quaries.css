@@ -1,62 +1,13 @@
 @media screen and (max-width: 960px) {
   html {
     font-size: 10px;
-  }
-
-  header {
-    align-items: flex-start;
-    padding: 2rem;
+    overflow-x: hidden;
   }
 
   .navbar {
     display: none;
   }
 
-  .drop_down_button {
-    display: block;
-    transition: all 1000ms ease-in-out;
-  }
-
-  .drop_down_button .button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    background-color: none;
-  }
-
-  .button i {
-    display: none;
-
-  }
-
-  .drop_down_icon {
-    width: 3rem;
-    height: 3px;
-    background-color: #e67e22;
-  }
-
-  .drop_down_content {
-    display: block;
-    background-color: rgba(230, 126, 34, 0.9);
-    transform: rotateY(360deg);
-    color: #f5f5f5;
-    margin-top: 3.4rem;
-    margin-right: -50rem;
-    padding-bottom: 1rem;
-    width: 25rem;
-    line-height: 1.8;
-    position: absolute;
-    transition: all 500ms ease-in-out;
-
-  }
-
-  .drop_down_content .nav_list .nav_link {
-    display: block;
-    background-color: #f5f5f5;
-    color: #cf711f;
-    box-shadow: 5px 3px 8px rgba(0, 0, 0, 0.2);
-  }
 
   .fa,
   .fab {
@@ -65,16 +16,103 @@
     font-weight: 600;
   }
 
+  /* mobile navbar */
+  header {
+    height: 8rem;
+    padding: 2rem;
+    position: relative;
+  }
+
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2;
+  }
+
+  .nav_link {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .nav_link:hover,
+  .nav_link:active {
+    border: none;
+  }
+
   .nav_btn {
-    background-color: #f5f5f5;
-    color: #cf711f;
+    background-color: #e67e22;
+    color: #fff;
     margin-top: 1rem;
-    margin-left: 10rem;
-    padding: .5rem 1.2rem;
+    letter-spacing: 2.2px;
+    /* margin-left: 10rem; */
+    padding: .5rem 2.4rem;
     transform: 200ms;
   }
 
+  .mobile_nav {
+    display: block;
+  }
+
+  .mobile_nav_btn {
+    height: 4rem;
+    width: 4rem;
+    color: #e67e22;
+  }
+
+  .nav-open .navbar {
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* animation from this site --> https://easings.net/#easeInOutQuint */
+    transition: all 0.5s cubic-bezier(0.83, 0, 0.17, 1);
+
+    /* Hide navigation */
+    /* Allows NO transitions at all! */
+    /* display: none; */
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .navbar {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0%);
+  }
+
+  .mobile_nav_btn[name="close-outline"] {
+    display: none;
+  }
+
+  .nav-open .mobile_nav_btn[name="menu-outline"] {
+    display: none;
+  }
+
+  .nav-open .mobile_nav_btn[name="close-outline"] {
+    display: block;
+  }
+
   #index_section {
+    padding-top: 0;
     padding-bottom: 3rem;
   }
 
@@ -457,11 +495,15 @@
     border-bottom-right-radius: 0;
   }
 
+  #footer_section {
+    margin-bottom: 4rem
+  }
+
   .footer_content {
-    grid-template-columns: repeat(6, 1fr);
-    column-gap: 6.4rem;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
     row-gap: 4rem;
-    padding: 4rem;
+    padding: 2rem;
   }
 
   .footer_heading h2 {
@@ -475,13 +517,14 @@
   }
 
   .footer_card:first-child {
-    align-items: center;
-    grid-column: span 3;
+    align-items: flex-start;
+    grid-column: span 2;
     gap: 0;
   }
 
   .footer_heading .logo {
     height: 2rem;
+    width: 100px;
   }
 
   .footer_heading .logo img {
@@ -489,13 +532,13 @@
   }
 
   .logo .footer_card:nth-child(2) {
-    grid-column: span 3;
+    /* grid-column: span 3; */
 
   }
 
   .footer_card:nth-child(3) {
     grid-row: 1;
-    grid-column: span 2;
+    /* grid-column: span 2; */
   }
 
   .footer_card:nth-child(4) {
@@ -505,7 +548,7 @@
 
   .footer_card:nth-child(5) {
     grid-row: 1;
-    grid-column: span 2;
+    /* grid-column: span 2; */
   }
 
   .contact_link {
@@ -522,11 +565,11 @@
   }
 
   .footer_nav a {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   .footer_text a,
   .footer_text p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 }
