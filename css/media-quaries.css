@@ -570,11 +570,11 @@
   }
 
   .footer_nav {
-    line-height: 2;
+    line-height: 1.6;
   }
 
   .footer_nav a {
-    font-size: 1.2rem;
+    line-height: 1.2;
   }
 
   .footer_text a,
