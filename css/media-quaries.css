@@ -169,6 +169,10 @@
     padding: 4rem 0;
   }
 
+  .brand_content {
+    padding: 0 1rem;
+  }
+
   .brand_section_heading {
     font-size: 1rem;
     padding-bottom: .5rem;
@@ -189,14 +193,14 @@
   }
 
   .about_heading {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 
   .about_typed_text {
     font-size: 1.4rem;
     margin-top: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
   }
 
   #how_it_works_section {
@@ -558,6 +562,10 @@
 
   .contact_link i {
     font-size: 1.4rem;
+  }
+
+  .social_link ul {
+    gap: 1rem;
   }
 
   .footer_nav {
