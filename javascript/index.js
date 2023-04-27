@@ -58,3 +58,12 @@ const obs = new IntersectionObserver(
   }
 );
 obs.observe(indexSectionElEl);
+
+function updateCopyRightYear() {
+  const yearEl = document.querySelector(".current_year");
+  const currentDate = new Date();
+  const currentYear = currentDate.getFullYear();
+  console.log(currentDate, currentYear);
+  yearEl.textContent = currentYear;
+}
+updateCopyRightYear();
