@@ -48,10 +48,25 @@ header {
   width: 100%;
   height: 9.6rem;
   padding: 0 4rem;
+  /* position: fixed;
+  top: 0;
+  z-index: 9999 */
+}
+
+/* STICKY NAVIGATION */
+.sticky header {
   position: fixed;
   top: 0;
-  z-index: 9999
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.97);
+  z-index: 9998;
+  box-shadow: 0 1.2rem 3.2rem rgb(0, 0, 0, 0.03);
 }
+
 
 .navbar {
   display: flex
@@ -1002,9 +1017,6 @@ form button {
   align-items: center;
   height: 4rem;
   width: 4rem;
-  position: fixed;
-  right: 2rem;
-  bottom: 5rem;
   transition: 300ms
 }
 
@@ -1030,4 +1042,11 @@ form button {
   position: absolute;
   right: -2.2rem;
   bottom: -2rem
+}
+
+/* STICKY BACK TO TOP */
+.sticky .back_to_top_btn {
+  position: fixed;
+  right: 2rem;
+  bottom: 5rem;
 }
