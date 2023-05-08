@@ -1,7 +1,7 @@
-const backToTopEl = document.querySelector(".back_to_top_box");
-window.addEventListener("scroll", () => {
-  backToTopEl.style.opacity = "1111";
-});
+// const backToTopEl = document.querySelector(".back_to_top_box");
+// window.addEventListener("scroll", () => {
+//   backToTopEl.style.opacity = "1111";
+// });
 // mobile navigation
 const btnNavEl = document.querySelector(".mobile_nav");
 const headerEl = document.querySelector("header");
