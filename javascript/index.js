@@ -1,7 +1,3 @@
-// const backToTopEl = document.querySelector(".back_to_top_box");
-// window.addEventListener("scroll", () => {
-//   backToTopEl.style.opacity = "1111";
-// });
 // mobile navigation
 const btnNavEl = document.querySelector(".mobile_nav");
 const headerEl = document.querySelector("header");
@@ -36,8 +32,8 @@ allLinks.forEach(function (link) {
 });
 
 // Sticky navigation
-const indexSectionElEl = document.querySelector("#index_section");
-const obs = new IntersectionObserver(
+const stickyIntersectionEl = document.querySelector("#index_section");
+const stickyObs = new IntersectionObserver(
   function (entries) {
     const ent = entries[0];
     console.log(ent);
@@ -54,10 +50,10 @@ const obs = new IntersectionObserver(
     // In the viewport
     root: null,
     threshold: 0,
-    rootMargin: "-80px",
+    rootMargin: "1px",
   }
 );
-obs.observe(indexSectionElEl);
+stickyObs.observe(stickyIntersectionEl);
 
 function updateCopyRightYear() {
   const yearEl = document.querySelector(".current_year");

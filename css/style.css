@@ -116,7 +116,8 @@ header {
 
 .index_text_card {
   display: flex;
-  flex-direction: column
+  flex-direction: column;
+  animation: fadeInLeft 1s linear;
 }
 
 .index_text_card h1 {
@@ -202,6 +203,11 @@ header {
   color: var(--brand-color)
 }
 
+.index_img {
+  transition: opacity 1s linear;
+  animation: fadeInRight 1s linear;
+}
+
 #brands_section {
   background-color: #fff;
   padding: 8rem 0
@@ -257,7 +263,8 @@ header {
   display: flex;
   flex-direction: column;
   margin-top: 3rem;
-  padding-left: 4rem
+  padding-left: 4rem;
+  animation: fadeInLeft 1s linear;
 }
 
 .about_heading {
@@ -1049,4 +1056,12 @@ form button {
   position: fixed;
   right: 2rem;
   bottom: 5rem;
+}
+
+.fadeInRight {
+  animation: fadeInRight 1s linear;
+}
+
+.fadeInLeft {
+  animation: fadeInLeft 1s linear;
 }
