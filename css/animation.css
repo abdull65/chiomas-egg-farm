@@ -58,8 +58,7 @@
 
 .view_more_btn:link:hover,
 .view_more_btn:visited:hover {
-  border: none;
-  padding: 1rem 1.2rem;
+  transform: scale(1.1);
   box-shadow: inset 0 0 0 3px #fdf2e9;
 }
 
@@ -138,5 +137,19 @@ form button:hover {
   to {
     opacity: 100%;
     transform: translateX(0)
+  }
+}
+
+@keyframes upToDown {
+  0% {
+    transform: translateY(4px)
+  }
+
+  50% {
+    transform: translateY(-4px)
+  }
+
+  100% {
+    transform: translateY(4px)
   }
 }

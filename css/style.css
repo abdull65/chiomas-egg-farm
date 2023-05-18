@@ -85,6 +85,10 @@ header {
   transition: all 300ms linear
 }
 
+.nav_link:focus {
+  color: var(--brand-color);
+}
+
 .nav_btn {
   display: inline-block;
   background-color: var(--brand-color);
@@ -865,6 +869,7 @@ select {
   font-size: 1.6rem;
   font-weight: 400;
   color: #45260a;
+  height: 50px;
   border: none;
   outline: none;
   padding: 1.6rem 1rem;
@@ -1024,7 +1029,8 @@ form button {
   align-items: center;
   height: 4rem;
   width: 4rem;
-  transition: 300ms
+  transition: 300ms;
+  animation: upToDown 2s infinite ease-in-out;
 }
 
 .back_to_top_box {
@@ -1032,24 +1038,13 @@ form button {
   flex-direction: column;
   align-items: center;
   position: relative;
-  opacity: 0
+  opacity: 1;
 }
 
 .back_to_top_btn .fa {
   color: var(--primary-bg-color)
 }
 
-.back_to_top_box p {
-  display: none;
-  color: #cf711f;
-  font-size: 1.4rem;
-  font-weight: 500;
-  margin-top: 6rem;
-  width: 10rem;
-  position: absolute;
-  right: -2.2rem;
-  bottom: -2rem
-}
 
 /* STICKY BACK TO TOP */
 .sticky .back_to_top_btn {
