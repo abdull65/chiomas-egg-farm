@@ -83,12 +83,14 @@
     align-items: center;
     pointer-events: none;
     transform: translateX(100%);
+    visibility: hidden;
     transition: transform 500ms ease-in-out;
   }
 
   .nav-open .navbar {
     opacity: 1;
     pointer-events: auto;
+    visibility: visible;
     transform: translateX(0%);
   }
 
