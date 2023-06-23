@@ -6,7 +6,7 @@
 
   body,
   #container {
-    overflow-y: hidden;
+    overflow-x: hidden;
   }
 
   .navbar {
