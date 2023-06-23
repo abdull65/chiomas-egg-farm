@@ -89,7 +89,7 @@
     pointer-events: none;
     transform: translateX(100%);
     visibility: hidden;
-    transition: transform 500ms ease-in-out, visibility 1000ms ease-in-out;
+    transition: transform 500ms ease-in-out, visibility 800ms ease-in-out;
   }
 
   .nav-open .navbar {
