@@ -66,12 +66,9 @@
   .mobile_nav_btn {
     height: 4rem;
     width: 4rem;
-    color: #e67e22;
-  }
-
-  .mobile_nav_btn:hover {
-    box-shadow: inset 1px 1px #e67e22, inset -1px -1px #e67e22;
     background-color: rgba(255, 255, 255, 0.9);
+    color: #e67e22;
+    box-shadow: inset 1px 1px #e67e22, inset -1px -1px #e67e22;
   }
 
   .navbar {
@@ -90,6 +87,7 @@
     transform: translateX(100%);
     visibility: hidden;
     transition: transform 500ms ease-in-out, visibility 800ms ease-in-out;
+
   }
 
   .nav-open .navbar {
