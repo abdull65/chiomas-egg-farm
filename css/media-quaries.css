@@ -64,7 +64,12 @@
     color: #e67e22;
   }
 
-  .nav-open .navbar {
+  .mobile_nav_btn:hover {
+    box-shadow: inset 1px 1px #e67e22, inset -1px -1px #e67e22;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  .navbar {
     background-color: rgba(255, 255, 255, 0.9);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(5px);
@@ -73,33 +78,17 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    transform: translateX(100%);
-
     display: flex;
     justify-content: center;
     align-items: center;
-
-    /* animation from this site --> https://easings.net/#easeInOutQuint */
-    transition: all 0.5s cubic-bezier(0.83, 0, 0.17, 1);
-
-    /* Hide navigation */
-    /* Allows NO transitions at all! */
-    /* display: none; */
-
-    /* 1) Hide it visually */
-    opacity: 0;
-
-    /* 2) Make it unaccessible to mouse and keyboard */
     pointer-events: none;
-
-    /* 3) Hide it from screen readers */
-    visibility: hidden;
+    transform: translateX(100%);
+    transition: transform 500ms ease-in-out;
   }
 
   .nav-open .navbar {
     opacity: 1;
     pointer-events: auto;
-    visibility: visible;
     transform: translateX(0%);
   }
 
