@@ -52,7 +52,17 @@ header {
   top: 0;
   z-index: 9999 */
 }
-
+header .logo {
+height: 100%;
+width: 200px;
+display: inline-flex;
+align-items: center;
+}
+header .logo img {
+height: 100% !important;
+width: 100% !important;
+object-fit: contain;
+}
 /* STICKY NAVIGATION */
 .sticky header {
   position: fixed;
@@ -67,6 +77,9 @@ header {
   box-shadow: 0 1.2rem 3.2rem rgb(0, 0, 0, 0.03);
 }
 
+.sticky #index_section {
+  margin-top: 8rem;
+}
 
 .navbar {
   display: flex

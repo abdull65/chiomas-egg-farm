@@ -38,7 +38,7 @@ const stickyObs = new IntersectionObserver(
     const ent = entries[0];
     console.log(ent);
 
-    if (ent.isIntersecting === false) {
+    if (!ent.isIntersecting) {
       document.body.classList.add("sticky");
     }
 
@@ -50,7 +50,7 @@ const stickyObs = new IntersectionObserver(
     // In the viewport
     root: null,
     threshold: 0,
-    rootMargin: "1px",
+    rootMargin: "-80px",
   }
 );
 stickyObs.observe(stickyIntersectionEl);
