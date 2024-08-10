@@ -1035,6 +1035,7 @@ form button {
 .back_to_top_btn {
   background-color: var(--brand-color);
   color: var(--primary-bg-color);
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
