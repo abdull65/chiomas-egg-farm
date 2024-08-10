@@ -149,7 +149,7 @@
   .index_text_card>h1 {
     font-size: 2.4rem;
     padding-right: 2rem;
-    text-align: left;
+    text-align: center;
   }
 
   .index_text_card>p {
@@ -208,7 +208,7 @@
   }
 
   .about_typed_text {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     margin-top: 2rem;
     padding-left: .5rem;
     padding-right: 1rem;
@@ -229,7 +229,7 @@
   }
 
   .how_it_works_heading h2 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   .how_it_works_content_card {
@@ -394,7 +394,7 @@
   }
 
   .testimonial_heading h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .testimonials {
