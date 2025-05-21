@@ -1,7 +1,3 @@
-.gallery_box img:hover {
-  transform: scale(1.1);
-}
-
 .nav_link:link:hover,
 .nav_link:visited:hover,
 .nav_link:visited:active {
@@ -52,8 +48,8 @@
 .outline_index_btn:link:hover,
 .outline_index_btn:visited:hover {
   transition: ease-in 1s;
-  /* background-color: #fdf2e9; */
   box-shadow: inset 200px 0px 0px 0px #f08c35;
+  color: #ffffff;
 }
 
 .view_more_btn:link:hover,
